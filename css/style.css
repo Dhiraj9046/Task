@@ -1,0 +1,87 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background-color: pink;
+   background-image:  linear-gradient(rgb(134, 23, 101), rgb(58, 16, 105));
+}
+
+.bodystyle{
+    width: 90%;
+    margin: 0 auto;
+}
+.list-items{
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotateX(20deg);
+}
+.list-item{
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+    text-decoration: none;
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(221, 197, 63);
+}
+
+.fas{
+    color: brown;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* background-color: violet; */
+}
+.box-1{
+    width: 100%;
+    background-color: #ffc600;
+    height: 47%;
+    border-radius: 0px;
+}
+.line{
+    color: white;
+    margin: 0px 30px;
+}
+.linex{
+    width: 35%;
+    background-color: #ffc600;
+    height: 5px;
+    margin-top: 10px;
+}
+
+button{
+    color: #000;
+    background: orange;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+}
+#menu{
+    display: none;
+}
+@media only screen and (max-width: 900px) {
+    #menu{
+        background-color: yellow; display: flex; flex-wrap: nowrap; width: 100px;
+    }
+    .lists{
+        display: none;
+    }
+    .list-item{
+        width: 130px;
+    }
+    #openNav{
+       font-size: 14px;
+       display: none;
+       cursor: pointer; 
+    }
+    #closeNav{
+        font-size: 14px;
+        
+        cursor: pointer;
+    }
+  }
